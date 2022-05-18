@@ -132,7 +132,18 @@ devtool: 'eval-source-map',
 NODE_ENV=production yarn webpack serve
 
 
+// chore: add style-loader and css-loader for webpack bundle css/styles 
+yarn add style-loader css-loader -D   
 
+// add in webpack rules, this object:
+
+```
+{
+  test: /\.css$/,
+  exclude: /node_modules/,
+  use: ['style-loader', 'css-loader']
+}
+```
 
 
 
