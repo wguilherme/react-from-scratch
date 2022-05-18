@@ -58,6 +58,38 @@ yarn add babel-loader -D
 // testing run webpack in command line
 yarn webpack
 
+// in src/index.jsx 
+
+```
+import React from 'react'
+import { render } from 'react-dom'
+
+render(<h1>Test</h1>, document.getElementById('root'))
+```
+
+in index.html, add tag script before close body tag importing bundled webpack js
+<script src="../dist/bundle.js"></script>
+
+// It should be working at this point.
+// run webpack
+yarn webpack
+
+//open public/index.html with browser to see render content. (ex.: h1 title Test)
+
+//updating import. React  v17+ does't need to import react in every file. 
+//add this in babel.config.js
+// change from 
+```
+'@babel/preset-react' 
+```
+to
+
+```
+['@babel/preset-react',{
+  runtime: 'automatic'
+}]
+```
+
 
 
 
