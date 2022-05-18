@@ -118,6 +118,14 @@ devServer: {
 yarn webpack serve
 // It should run the application into some localhost port. (default is 8080)
 
+//add sourceMaps to see original code when debugging / devmode
+// add this param into webpack.config.js 
+```
+devtool: 'eval-source-map',
+```
+
+
+
 
 
 
