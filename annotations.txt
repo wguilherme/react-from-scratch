@@ -125,6 +125,15 @@ devtool: 'eval-source-map',
 ```
 
 
+// add  devTool and mode base if env is development + add cross-env for multiplatform
+
+// tip: in terminal can run before the code:
+// works only in UNIX systems
+NODE_ENV=production yarn webpack serve
+
+
+
+
 
 
 
