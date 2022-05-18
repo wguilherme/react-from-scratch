@@ -33,6 +33,12 @@ yarn add @babel/preset-react -D
 // add the react-preset in babel.config.js presets array
 
 
+// change src/index.js to src/index.jsx (just for convention)
+yarn babel src/index.jsx --out-file dist/bundle.js  
+
+
+
+
 
 
 
