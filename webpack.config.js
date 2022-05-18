@@ -10,12 +10,16 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
+  devServer: {
+    static: path.resolve(__dirname, 'public', 'index.html'),
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html')
 
     })
   ],
+
   module: {
     rules: [
       {

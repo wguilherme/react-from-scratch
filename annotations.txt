@@ -91,6 +91,37 @@ to
 ```
 
 
+//chore: add html webpack plugin to inject bundled conde into html
+yarn add html-webpack-plugin -D        
+// add it into webpack plugins:
+
+```
+plugins: [
+  new HtmlWebpackPlugin({
+    template: path.resolve(__dirname, 'public', 'index.html')
+
+  })
+]
+```
+
+// add webpack-dev-server for fast refresh. (re-bundle)
+yarn add webpack-dev-server -D
+// add config into webpack.config.js
+```
+// old versions use contentBase instead static param
+devServer: {
+  static: path.resolve(__dirname, 'public', 'index.html'),
+}
+```
+
+// now run, instead  yarn webpack:
+yarn webpack serve
+// It should run the application into some localhost port. (default is 8080)
+
+
+
+
+
 
 
 
