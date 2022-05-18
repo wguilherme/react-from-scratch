@@ -26,6 +26,16 @@ yarn babel src/index.js --out-file dist/bundle.js
 
 bundle.js // conventional file name for 'converted' file with babel
 
+// add babel preset for react for support html in js
+// now can run babel with react syntax
+yarn add @babel/preset-react -D   
+
+// add the react-preset in babel.config.js presets array
+
+
+
+
+
 
 
 
