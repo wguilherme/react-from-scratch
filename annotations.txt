@@ -1,0 +1,34 @@
+// init nodejs project
+yarn init -y
+
+// add react
+yarn add react
+yarn add react-dom
+
+// add babel libs
+yarn add @babel/core @babel/cli @babel/preset-env -D 
+
+// init folder structure
+create public and src folders
+create .gitignore
+
+// config babel
+create babel.config.js file
+with
+module.exports presets babel preset env
+
+@babel/core: lib core
+@babel/cli: run from command line (yarn babel -h to see all commands)
+@babel/preset-env: identify environment and setup compiler in the better way
+
+// test babel  from command line:
+yarn babel src/index.js --out-file dist/bundle.js  
+
+bundle.js // conventional file name for 'converted' file with babel
+
+
+
+
+
+
+
