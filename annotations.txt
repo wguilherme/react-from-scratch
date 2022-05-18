@@ -36,6 +36,36 @@ yarn add @babel/preset-react -D
 // change src/index.js to src/index.jsx (just for convention)
 yarn babel src/index.jsx --out-file dist/bundle.js  
 
+// add webpack
+// add loaders for files like png, sass, js, jpg, etc...
+yarn add webpack webpack-cli -D
+
+// add webpack.config.js with module.exports = {}
+// add entry param with src/index.jsx file
+// add output path and filename
+
+// add resolve param with extensions array
+// add .js and .jsx in extensions
+
+// add module param
+// in rules, add the webpack rules for react (test/exclude)
+
+// add babel loader
+yarn add babel-loader -D
+
+// add babel-loader to webpack rules 
+
+// testing run webpack in command line
+yarn webpack
+
+
+
+
+
+
+
+
+
 
 
 
