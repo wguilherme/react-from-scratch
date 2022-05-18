@@ -147,6 +147,21 @@ yarn add style-loader css-loader -D
 
 
 
+// chore: add sass support, node-sass and sas-loader + webpack rule config
+yarn add sass-loader node-sass -D
+// rename all files from .css to .scss
+// update all files import .css to .scss
+// update webpack.config.js css rule
+
+// The rule should be like this
+```
+{
+  test: /\.scss$/,
+  exclude: /node_modules/,
+  use: ['style-loader', 'css-loader', 'sass-loader']
+}
+```
+
 
 
 
